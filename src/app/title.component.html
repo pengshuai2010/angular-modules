@@ -1,2 +1,6 @@
 <h2>{{title}} </h2>
 <h3 appHighlight>{{subtitle}}</h3>
+<!--only show greeting when there IS a user logged in-->
+<p *ngIf="username">
+  Welcome, <i>{{username}}</i>!
+</p>
