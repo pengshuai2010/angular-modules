@@ -4,9 +4,10 @@ import {ContactComponent} from './contact.component';
 import {ContactHighlightDirective} from './highlight.directive';
 import {AwesomePipe} from './awesome.pipe';
 import {ContactService} from './contact.service';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   declarations: [ContactComponent, ContactHighlightDirective, AwesomePipe],
   exports: [ContactComponent],
   providers: [ContactService]
