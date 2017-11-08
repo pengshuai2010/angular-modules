@@ -1,0 +1,5 @@
+<h3>Crisis List</h3>
+<!--TODO add ref in anchor element-->
+<div *ngFor="let crisis of crisises | async">
+  <app-crisis-detail [crisis]="crisis"></app-crisis-detail>
+</div>

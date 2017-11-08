@@ -7,6 +7,7 @@ import {TitleComponent} from './title.component';
 import {UserService} from './user.service';
 import {FormsModule} from '@angular/forms';
 import {ContactModule} from './contact/contact.module';
+import {CrisisModule} from './crisis/crisis.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {ContactModule} from './contact/contact.module';
   imports: [
     BrowserModule,
     FormsModule,
-    ContactModule
+    ContactModule,
+    CrisisModule
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
